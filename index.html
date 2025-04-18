@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Wave Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="visualizer" id="visualizer"></div>
+    
+    <div class="player-container">
+        <div class="album-art" id="albumArt">
+            <img src="https://source.unsplash.com/random/800x800/?music" alt="Album Art" class="art">
+            <div class="vinyl"></div>
+        </div>
+
+        <div class="player-controls">
+            <div class="song-info">
+                <h2 class="song-title" id="title">Neon Dreams</h2>
+                <p class="artist" id="artist">Wave Rider</p>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progress"></div>
+                <div class="time-display">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="prev" class="control-btn"><i class="fas fa-step-backward"></i></button>
+                <button id="play" class="control-btn play-btn"><i class="fas fa-play"></i></button>
+                <button id="next" class="control-btn"><i class="fas fa-step-forward"></i></button>
+            </div>
+
+            <div class="extra-controls">
+                <div class="volume-container">
+                    <i class="fas fa-volume-up volume-icon"></i>
+                    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                </div>
+                <button class="lyric-btn" id="lyrics"><i class="fas fa-scroll"></i> Lyrics</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
